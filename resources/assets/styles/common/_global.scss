@@ -1,0 +1,34 @@
+button,
+a,
+input {
+  outline: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+body,
+html {
+  font-family: $font-Graphik;
+  overflow-x: hidden;
+}
+
+.zoom-effect {
+  .effect-link {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .effect-img {
+    transition: all 0.2s linear;
+  }
+
+  &:hover {
+    .effect-img {
+      transition: all 0.2s linear;
+      transform: scale(1.1);
+    }
+  }
+}

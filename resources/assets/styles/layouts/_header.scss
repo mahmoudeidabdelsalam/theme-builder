@@ -1,0 +1,50 @@
+.banner .nav li {
+  @extend .nav-item;
+}
+
+.banner .nav a {
+  @extend .nav-link;
+}
+
+.banner {
+  padding: 35px 0 30px;
+
+  .logos {
+    max-width: 260px;
+    margin: 0;
+  }
+
+  .logo-created {
+    max-width: 68px;
+  }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-light {
+    .navbar-nav {
+      .nav-link {
+        color: $brand-black;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 0;
+
+    nav {
+      padding: 0;
+
+      .nav-right {
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.6);
+        border-top: 1px solid rgba(204, 204, 204, 0.6);
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

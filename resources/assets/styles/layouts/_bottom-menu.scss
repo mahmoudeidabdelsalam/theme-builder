@@ -1,0 +1,28 @@
+.bottom-menu {
+  ul {
+    li {
+      &.menu-item {
+        margin: 24px 0;
+        flex: 0 30%;
+
+        &.current_page_item {
+          font-weight: 800;
+        }
+
+        a {
+          &.nav-link {
+            font-family: $font-Graphik;
+            font-size: 27px;
+            letter-spacing: -0.02em;
+            line-height: 30px;
+            color: $brand-black;
+
+            @include media-breakpoint-down(sm) {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

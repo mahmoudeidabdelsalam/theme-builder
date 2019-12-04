@@ -1,0 +1,137 @@
+div {
+  &.spacer {
+    height: 175px;
+
+    @include media-breakpoint-down(sm) {
+      height: 95px;
+    }
+  }
+
+  &.spcer-smaall {
+    height: 48px;
+
+    @include media-breakpoint-down(sm) {
+      height: 24px;
+    }
+  }
+}
+
+h1 {
+  font-family: $font-Graphik;
+  font-size: 43px;
+  color: $brand-black;
+}
+
+h2 {
+  font-family: $font-Graphik;
+  font-size: 27px;
+  line-height: 30px;
+  color: $brand-black;
+  font-weight: 400;
+  margin-bottom: 30px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 17px;
+  }
+
+  &.large {
+    font-size: 41px;
+    color: $brand-secondary;
+    line-height: 50px;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 27px;
+    }
+  }
+}
+
+h3 {
+  font-family: $font-Graphik;
+  font-size: 27px;
+  line-height: 30px;
+  color: $brand-black;
+  font-weight: 300;
+  margin-bottom: 30px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 17px;
+  }
+}
+
+p {
+  font-family: $font-Graphik;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 130%;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 13px;
+  }
+
+  &.small {
+    font-size: 13px;
+  }
+
+  &.caption {
+    font-size: 13px;
+    opacity: 0.5;
+  }
+}
+
+a {
+  font-size: 17px;
+  color: $brand-black;
+  cursor: pointer;
+  line-height: 14px;
+  letter-spacing: 1px;
+  transition: color 0.4s ease;
+
+  &:hover {
+    text-decoration: none;
+    color: $brand-blue;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 10px;
+  }
+
+  &.small {
+    font-size: 13px;
+  }
+
+  &.nav-link {
+    &:hover {
+      color: $brand-blue;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 8px 0;
+    }
+  }
+}
+
+label {
+  font-family: $font-Graphik;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+input {
+  &.form-control {
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid $brand-black;
+    border-radius: 0;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &::placeholder {
+      color: $brand-black;
+      opacity: 0.3;
+    }
+
+    &:focus {
+      border-bottom: 1px solid $brand-blue;
+      box-shadow: 0 1px 0 0 $brand-blue;
+    }
+  }
+}

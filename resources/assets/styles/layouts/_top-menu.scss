@@ -1,0 +1,35 @@
+.top-menu {
+  .dropdown {
+    a {
+      &.dropdown-toggle {
+        font-family: $font-Graphik;
+        font-size: 43px;
+        letter-spacing: -0.02em;
+        color: $brand-black;
+
+        @include media-breakpoint-down(sm) {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  ul {
+    &.navbar-nav {
+      li {
+        &.menu-item {
+          &.current_page_item {
+            font-weight: 800;
+          }
+
+          a {
+            &.nav-link {
+              font-size: 27px;
+              margin: 15px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

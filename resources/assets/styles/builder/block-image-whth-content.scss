@@ -1,0 +1,21 @@
+.block-image-with-content {
+  h2 {
+    margin-bottom: 30px;
+
+    &.large {
+      top: 40%;
+      left: 40%;
+
+      @include media-breakpoint-down(sm) {
+        top: 45%;
+        left: 30%;
+      }
+    }
+  }
+
+  .image-overlay {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 20px;
+    }
+  }
+}

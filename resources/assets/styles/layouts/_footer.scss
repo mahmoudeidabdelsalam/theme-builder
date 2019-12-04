@@ -1,0 +1,30 @@
+footer {
+  .bg-black {
+    background: $brand-black;
+  }
+
+  .footer-copyright {
+    min-height: 60px;
+
+    ul {
+      li {
+        a {
+          &.nav-link {
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: $brand-white;
+            opacity: 0.6;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 14px;
+      letter-spacing: 0.05em;
+      opacity: 0.5;
+    }
+  }
+}
